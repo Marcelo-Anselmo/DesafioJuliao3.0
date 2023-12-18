@@ -1,18 +1,13 @@
-import { useState } from "react";
-import "./App.css";
+import React from 'react'
+import Header from './components/header/Header'
 
-function App() {
-  const [count, setCount] = useState(0);
-
+const App = () => {
   return (
-    <>
-      <div>
-        <h1>Hello World!</h1>
-        <p>{count}</p>
-        <button onClick={() => setCount(count + 1)}>Clique aqui!</button>
-      </div>
-    </>
-  );
+    <div>
+      <Header />
+      <h1>HOME</h1>
+    </div>
+  )
 }
 
-export default App;
+export default App

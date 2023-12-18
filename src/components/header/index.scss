@@ -1,0 +1,43 @@
+.header{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(81,11,84,1) 17%, rgb(85, 14, 126) 67%, rgb(103, 18, 143) 100%);;
+    padding: 3rem 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    ul{
+        display: flex;
+        gap: 2rem;
+        padding-right: 1rem;
+        align-items: center;
+    }
+
+        li{
+            list-style: none;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+
+            &:hover{
+                color: gold;
+            }
+        }
+
+    button{
+        background-color: #303030;
+        color: white;
+        padding: 0.5rem 2rem;
+        border: 0;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: 0.5s;
+        
+
+        &:hover{
+            transform: translateY(-4px);
+            transition: 1s;
+            color: gold;
+        }
+    }
+}
