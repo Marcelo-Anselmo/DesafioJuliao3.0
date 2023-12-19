@@ -11,7 +11,7 @@ const Banner = () => {
             <Link to={'/login'}><button>Fique por dentro!</button></Link>
         </div>
     </div>
-  )
-}
+  );
+};
 
-export default Banner
+export default Banner;
