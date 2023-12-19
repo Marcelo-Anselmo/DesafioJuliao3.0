@@ -5,6 +5,7 @@ export const CardNews = () => {
   const { data, isFetching } = useFetch(
     "https://desafio-julio3-0-backend.vercel.app/"
   );
+  let keyo = 0
 
   const renderContent = () => {
     if (isFetching) {
@@ -13,7 +14,7 @@ export const CardNews = () => {
       return Object.values(data.articles).map((articles) => {
         return (
           <>
-            <div className="cardgeral">
+            <div key={keyo +1} className="cardgeral">
               <section className="cardnews">
                 <div className="card">
                   <p>{articles.author}</p>
