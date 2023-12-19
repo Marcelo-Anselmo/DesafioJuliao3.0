@@ -8,10 +8,10 @@ const Form = ({h3='Olá, bem vindo!' , action='Login', metodo = 'GET', linkto='/
         <form action="" method={metodo}>
             <h3>{h3}</h3>
                 <label htmlFor="">Username</label>
-                <input type="text" placeholder='@username'/>
+                <input type="text" required placeholder='@username'/>
 
                 <label htmlFor="">Password</label>
-                <input type="password" placeholder='*******'/>
+                <input type="password" required placeholder='*******'/>
 
                 <Link to={'/'}><button type='submit'>{action}</button></Link>
                 
