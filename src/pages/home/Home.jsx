@@ -6,7 +6,7 @@ import { CardNews } from '../../components/cardNews/CardNews'
 
 const Home = () => {
   return (
-    <div>
+    <div className='home'>
       <Header />
       <Banner />
       <CardNews />

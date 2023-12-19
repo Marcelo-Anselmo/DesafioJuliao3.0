@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 .cardgeral{
     display: flex;
     flex-direction: row;
@@ -32,6 +33,7 @@
 
         a{
             text-decoration: none;
+            transition: 0.5s;
 
             &:hover{
                 color: purple;
