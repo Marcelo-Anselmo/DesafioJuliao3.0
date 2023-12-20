@@ -1,15 +1,31 @@
 import { useState } from 'react'
 import './index.scss'
-import { Link } from 'react-router-dom'
+import { redirect } from 'react-router-dom'
 
 const Form = ({h3='Olá, bem vindo!' , action='Login', metodo = 'GET', linkto='/signup', doing = 'cadastre-se', dohave = 'Não possui uma conta?'}) => {
     
     const [user, setUser] = useState({username: null, password: null})
 
+    const sendLogin = async (event) => {
+        event.preventDefault()
+
+        const data = {
+            username: user.username,
+            password: user.password
+        }
+
+        console.log(data)
+
+        
+        redirect('/')
+        
+    }
+
 
     return (
     <div className='.form'>
-        <form action="" method={metodo}>
+        
+        <form onSubmit={sendLogin} action='' method={metodo}>
             <h3>{h3}</h3>
                 <label htmlFor="">Username</label>
                 <input type="text" required placeholder='@username' autoComplete='@username' onChange={(e) => {
@@ -24,7 +40,7 @@ const Form = ({h3='Olá, bem vindo!' , action='Login', metodo = 'GET', linkto='/
                     console.log(password)
                 }}/>
 
-                <Link to={'/'}><button type='submit'>{action}</button></Link>
+                <button type='submit'>{action}</button>
                 
                 <div style={{textAlign: 'center'}}>
                     <p>{dohave}</p>
