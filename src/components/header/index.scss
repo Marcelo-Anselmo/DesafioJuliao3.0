@@ -1,6 +1,7 @@
 .header{
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(81,11,84,1) 17%, rgb(85, 14, 126) 67%, rgb(103, 18, 143) 100%);;
     padding: 3rem 6rem;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -40,6 +41,26 @@
             transform: translateY(-4px);
             transition: 1s;
             color: gold;
+        }
+    }
+
+    @media screen and (max-width:768px){
+        flex-direction: column;
+        padding: 1rem 0;
+        justify-content: center;
+
+
+        ul{
+            padding-top: 1.5rem;
+            gap: 2.2rem;
+            padding-right: 0;
+        }
+            li{
+                font-size: 0.9rem;
+            }
+
+        img{
+            width: 200px;
         }
     }
 }
