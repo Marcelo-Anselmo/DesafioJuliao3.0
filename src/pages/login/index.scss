@@ -77,4 +77,11 @@
             color: gold;
         }
     }
+
+    @media screen and (max-width:768px){
+        form{
+            width: 90vw;
+            height: 80vh;
+        }
+    }
 }

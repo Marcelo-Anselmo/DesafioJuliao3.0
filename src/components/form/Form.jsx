@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './index.scss'
-import { redirect } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const Form = ({h3='Olá, bem vindo!' , action='Login', metodo = 'GET', linkto='/signup', doing = 'cadastre-se', dohave = 'Não possui uma conta?'}) => {
     
@@ -8,6 +8,8 @@ const Form = ({h3='Olá, bem vindo!' , action='Login', metodo = 'GET', linkto='/
 
     const sendLogin = async (event) => {
         event.preventDefault()
+
+        const navigate = useNavigate()
 
         const data = {
             username: user.username,
@@ -17,7 +19,7 @@ const Form = ({h3='Olá, bem vindo!' , action='Login', metodo = 'GET', linkto='/
         console.log(data)
 
         
-        redirect('/')
+        navigate("/")
         
     }
 
@@ -25,7 +27,7 @@ const Form = ({h3='Olá, bem vindo!' , action='Login', metodo = 'GET', linkto='/
     return (
     <div className='.form'>
         
-        <form onSubmit={sendLogin} action='' method={metodo}>
+        <form onSubmit={sendLogin} action="" method={metodo}>
             <h3>{h3}</h3>
                 <label htmlFor="">Username</label>
                 <input type="text" required placeholder='@username' autoComplete='@username' onChange={(e) => {
