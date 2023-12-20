@@ -47,16 +47,20 @@
     @media screen and (max-width:768px){
         flex-direction: column;
         padding: 1rem 0;
-        justify-content: center;
 
 
         ul{
             padding-top: 1.5rem;
-            gap: 2.2rem;
+            width: 100%;
+            gap: 2rem;
+            justify-content: space-around;
             padding-right: 0;
         }
+
+        
             li{
                 font-size: 0.9rem;
+
             }
 
         img{
