@@ -5,11 +5,12 @@ import { useNavigate } from 'react-router-dom'
 const Form = ({h3='Olá, bem vindo!' , action='Login', metodo = 'GET', linkto='/signup', doing = 'cadastre-se', dohave = 'Não possui uma conta?'}) => {
     
     const [user, setUser] = useState({username: null, password: null})
+    const navigate = useNavigate()
 
     const sendLogin = async (event) => {
         event.preventDefault()
 
-        const navigate = useNavigate()
+        
 
         const data = {
             username: user.username,
