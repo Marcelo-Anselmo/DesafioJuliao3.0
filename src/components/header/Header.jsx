@@ -7,8 +7,8 @@ const Header = () => {
     <header className='header'>
         <img src={rect} alt="" />
         <ul>
-            <li><a href="">Seja membro</a></li>
-            <li><a href="">Last news</a></li>
+            <li><a href="/signup">Seja membro</a></li>
+            <li><a href="#noticias">Last news</a></li>
             <a href="/login"><button>Login</button></a>
         </ul>
     </header>

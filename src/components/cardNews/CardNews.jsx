@@ -10,6 +10,7 @@ export const CardNews = () => {
     if (isFetching) {
       return <span>CARREGANDO..</span>;
     } else if (data) {
+      console.log(data)
       return Object.values(data.articles).map((articles, index) => {
         return (
           <>
