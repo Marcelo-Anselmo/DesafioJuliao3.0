@@ -29,6 +29,7 @@ const Follow = (props) => {
             
             console.log(MOCK)
             setNotFollow(true)
+            
         }else{
             MOCK.following.push(props.empresa)
             console.log(MOCK)
