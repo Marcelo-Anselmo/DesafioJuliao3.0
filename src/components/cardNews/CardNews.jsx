@@ -6,6 +6,7 @@ export const CardNews = () => {
     "https://desafio-julio3-0-backend.vercel.app/"
   );
 
+
   const renderContent = () => {
     if (isFetching) {
       return <span>CARREGANDO..</span>;
@@ -13,8 +14,8 @@ export const CardNews = () => {
       console.log(data)
       return Object.values(data.articles).map((articles, index) => {
         return (
-          <>
-            <div key={index} className="cardgeral">
+          <div key={index}>
+            <div className="cardgeral">
               <section className="cardnews">
                 <div className="card">
                   <p>{articles.author}</p>
@@ -30,7 +31,7 @@ export const CardNews = () => {
                 </div>
               </section>
             </div>
-          </>
+          </div>
         );
       });
     } else {

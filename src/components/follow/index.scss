@@ -1,14 +1,18 @@
 .follow{
-    padding-top: 3rem;
-    width: 120px;
+    position: relative;
+    border-radius: 20px;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.151);
 
 
     &__indentimg{
-        background-color: white;
+        background-color: rgb(214, 212, 212);
         position: relative;
         border-radius: 50%;
         width: 100px;
