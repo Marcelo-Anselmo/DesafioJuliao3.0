@@ -9,6 +9,15 @@ export const CardNews = () => {
   );
 
   const [renderAgain, setRender] = useState(true)
+  const [showAll, setShow] = useState(false)
+
+  let mostrar 
+
+  if(showAll == true){
+    mostrar = 'Mostrar Menos'
+  }else{
+    mostrar = 'Mostrar tudo'
+  }
   
   setInterval(() => {
     setRender(!renderAgain)
@@ -41,7 +50,7 @@ export const CardNews = () => {
                 </div>
             </div>
           );
-        }else if(MOCK.following.length == 0){
+        }else if(MOCK.following.length == 0 || showAll == true){
           return (
             
             <div key={index}>
@@ -70,5 +79,14 @@ export const CardNews = () => {
     }
   };
 
-  return <>{renderContent()}</>;
+  return( 
+  <div>
+    {renderContent()}
+    {MOCK.following.length > 0 && 
+    <button id="button_show" onClick={() => {
+      setShow(!showAll)
+    }}>{mostrar}</button>
+    }
+  </div>
+  )
 };
