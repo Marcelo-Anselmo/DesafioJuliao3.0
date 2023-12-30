@@ -29,6 +29,11 @@
         transform: translateY(-3px);
         transition: 0.4s;
     }
+
+    @media screen and (max-width:768px){
+        width: 87vw;
+        margin: 2rem 0 0 2rem;
+    }
 }
 
 .cardnews {
