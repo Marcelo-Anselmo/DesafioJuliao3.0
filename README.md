@@ -30,11 +30,11 @@ Rode o seguinte comando
 
 
 ## 🔗 Dev-Team
-Marcelo-Anselmo[![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Marcelo-Anselmo)
+[![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Marcelo-Anselmo) Marcelo-Anselmo
 
-Marcelo Anselmo[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/marcelo-anselmo-41587b280/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/marcelo-anselmo-41587b280/) Marcelo Anselmo
 
-DiogoRocha[![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Marcelo-Anselmo)
+[![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Marcelo-Anselmo) DiogoRocha
 
-Diogo Rocha[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/diogo-rocha-361281256/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/diogo-rocha-361281256/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app) Diogo Rocha
 
