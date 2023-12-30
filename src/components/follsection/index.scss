@@ -1,11 +1,17 @@
 .follow_section{
     display: flex;
-    flex-wrap: wrap;
-    gap: 5rem;
+    gap: 4em;
     color: white;
     padding: 1rem 4rem;
 
     p{
         padding: 0.4rem;
     }
+
+    @media screen and (max-width:768px){
+        overflow: scroll;
+        padding: 1rem 1rem;
+        gap: 2rem;
+    }
+
 }

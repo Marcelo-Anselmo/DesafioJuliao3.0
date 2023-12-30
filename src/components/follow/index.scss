@@ -4,7 +4,6 @@
     margin-top: 1rem;
     padding: 1rem 2rem;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -12,7 +11,7 @@
 
 
     &__indentimg{
-        background-color: rgb(214, 212, 212);
+        background-color: white;
         position: relative;
         border-radius: 50%;
         width: 100px;
@@ -25,6 +24,9 @@
         padding: 1rem;
         position: absolute;
         width: 85%;
+    }
+    p{
+        max-width: 100px;
     }
 
     button{

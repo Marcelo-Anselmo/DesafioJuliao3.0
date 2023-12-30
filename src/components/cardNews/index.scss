@@ -14,6 +14,23 @@
     padding-left: 2rem;
 }
 
+#button_show{
+    margin: 2rem 2rem;
+    width: 600px;
+    padding: 1rem 0;
+    border-radius: 20px;
+    color: white;
+    border: 0;
+    transition: 0.4s;
+    background:linear-gradient(128deg, rgba(81,11,84,1) 0%, rgb(115, 7, 165) 0%, rgb(73, 10, 110) 12%, rgba(213,18,213,1) 98%, rgba(189,17,189,1) 100%, rgba(0,0,0,1) 100%); ;
+
+    &:hover{
+        color: gold;
+        transform: translateY(-3px);
+        transition: 0.4s;
+    }
+}
+
 .cardnews {
     width: 55vw;
     .card{
