@@ -1,11 +1,10 @@
 import React from 'react'
 import './index.scss'
-import rect from '/rectnews.svg'
 
 const Header = () => {
   return (
     <header className='header'>
-        <img src={rect} alt="" />
+        <img src='/rectnews.svg' alt="" />
         <ul>
             <li><a href="/signup">Seja membro</a></li>
             <li><a href="#noticias">Last news</a></li>
