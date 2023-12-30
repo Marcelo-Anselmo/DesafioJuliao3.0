@@ -1,14 +1,15 @@
 import React from 'react'
 import './index.scss'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
     <header className='header'>
         <img src='/rectnews.svg' alt="" />
         <ul>
-            <li><a href="/signup">Seja membro</a></li>
+            <li><Link to={'/signup'}><a>Seja membro</a></Link></li>
             <li><a href="#noticias">Last news</a></li>
-            <a href="/login"><button>Login</button></a>
+            <Link to={'/login'}><a><button>Login</button></a></Link>
         </ul>
     </header>
   )
