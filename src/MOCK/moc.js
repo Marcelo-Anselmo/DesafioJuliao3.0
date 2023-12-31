@@ -2,6 +2,7 @@ export const MOCK =
     {
         user: '',
         password: '',
-        following: []
+        following: [],
+        logged: false
     }
 

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./index.scss";
+import { MOCK } from '../../MOCK/moc';
 import { Link, useNavigate } from "react-router-dom";
 
 const Form = ({
@@ -21,9 +22,32 @@ const Form = ({
       password: user.password,
     };
 
+    if(metodo == 'GET'){
+
+      if (user.username == MOCK.user & user.password == MOCK.password){
+        alert(`Bem vindo ${user.username}`)
+        MOCK.logged = true
+        navigate("/");
+      }else{
+        alert('Confira os Dados')
+        Array.from(document.querySelectorAll("input")).forEach(
+          input => (input.value = "", input.style.border = '1px solid red')
+        );
+      }
+      
+    }else if(metodo == 'POST'){
+      MOCK.user = user.username
+      MOCK.password = user.password
+
+      alert('Conta Criada com sucesso')
+
+      navigate("/login");
+    }
+    console.log(MOCK)
+
     console.log(data);
 
-    navigate("/");
+    
   };
 
   return (
@@ -51,7 +75,6 @@ const Form = ({
           onChange={(e) => {
             let password = e.target.value;
             setUser({ ...user, password: password });
-            console.log(password);
           }}
         />
 
@@ -59,7 +82,7 @@ const Form = ({
 
         <div style={{ textAlign: "center" }}>
           <p>{dohave}</p>
-          <Link to={linkto}><a>{doing}</a></Link>
+          <Link to={linkto}>{doing}</Link>
         </div>
       </form>
     </div>

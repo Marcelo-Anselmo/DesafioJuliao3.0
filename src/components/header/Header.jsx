@@ -7,9 +7,9 @@ const Header = () => {
     <header className='header'>
         <img src='/rectnews.svg' alt="" />
         <ul>
-            <li><Link to={'/signup'}><a>Seja membro</a></Link></li>
+            <li><Link to={'/signup'}>Seja membro</Link></li>
             <li><a href="#noticias">Last news</a></li>
-            <Link to={'/login'}><a><button>Login</button></a></Link>
+            <Link to={'/login'}><button>Login</button></Link>
         </ul>
     </header>
   )
