@@ -7,11 +7,11 @@ const FolloSection = () => {
   return (
     <div className='follow_section'>
         <Follow logo='/g1-logo-7.png' empresa='G1' />
-        <Follow logo='/globo-logo.png' empresa='Globo.com' />
+        <Follow logo='/terra-logo.png' empresa='Terra' />
         <Follow logo='/logo0uol.png' empresa='UOL' />
-        <Follow logo='/band-logo.png' empresa='Band Jornalismo' />
+        <Follow logo='/logo-metropoles.png' empresa='Metrópoles' />
         <Follow logo='/logo-veja.png' empresa='VEJA' />
-        <Follow logo='/espn-logo.png' empresa='ESPN.com.br' />
+        <Follow logo='/logo-record.png' empresa='Record News' />
     </div>
   )
 }
