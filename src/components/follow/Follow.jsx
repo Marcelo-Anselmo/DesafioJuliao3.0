@@ -20,22 +20,25 @@ const Follow = (props) => {
 
 
     const AddFollow = () => {
-        if(MOCK.following.includes(props.empresa)){
-            for(let i=0; i < MOCK.following.length; i++){
-                if(MOCK.following[i] == props.empresa){
-                    MOCK.following.splice(i,1)
+        if(MOCK.logged == true){
+            if(MOCK.following.includes(props.empresa)){
+                for(let i=0; i < MOCK.following.length; i++){
+                    if(MOCK.following[i] == props.empresa){
+                        MOCK.following.splice(i,1)
+                    }
                 }
+                
+                console.log(MOCK)
+                setNotFollow(true)
+                
+            }else{
+                MOCK.following.push(props.empresa)
+                console.log(MOCK)
+                setNotFollow(false)
             }
-            
-            console.log(MOCK)
-            setNotFollow(true)
-            
         }else{
-            MOCK.following.push(props.empresa)
-            console.log(MOCK)
-            setNotFollow(false)
-        }
-        
+            alert("Faça login para executar essa ação")
+        }   
     }
 
   return (
